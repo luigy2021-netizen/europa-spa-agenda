@@ -126,6 +126,27 @@ def aplicar_estilos():
             margin: .5rem 0 1rem;
         }}
         .nota-avatar {{ color: #b9aa8c; font-size: .78rem; text-align: center; }}
+        .banner-agendas {{
+            margin-top: 2.5rem;
+            padding: 1rem 1.2rem;
+            border: 1px solid rgba(201,162,79,.48);
+            border-radius: 14px;
+            background: rgba(12,12,12,.86);
+            text-align: center;
+        }}
+        .banner-agendas strong {{ color: #d8ad57; font-size: 1.05rem; }}
+        .banner-agendas span {{ color: #c9c0ae; font-size: .9rem; }}
+        .banner-agendas a {{
+            display: inline-block;
+            margin-left: .7rem;
+            padding: .42rem .8rem;
+            border: 1px solid #9f7730;
+            border-radius: 8px;
+            color: #e8c979 !important;
+            text-decoration: none;
+            font-size: .86rem;
+        }}
+        .banner-agendas a:hover {{ background: rgba(201,162,79,.14); }}
         @media (max-width: 700px) {{
             .block-container {{ padding: 1rem; margin-top: .35rem; border-radius: 12px; }}
             .stApp {{ background-size: contain; }}
@@ -555,6 +576,18 @@ def main():
         pagina_cancelar(hoja_citas)
     with administrar:
         pagina_administracion(hoja_bloqueos)
+
+    st.markdown(
+        """
+        <div class="banner-agendas">
+            <strong>¿Tienes un negocio?</strong>
+            <span> Obtén una agenda digital personalizada como esta.</span>
+            <a href="https://wa.me/526563079754?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20agenda%20digital%20para%20mi%20negocio."
+               target="_blank" rel="noopener noreferrer">Solicitar información</a>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 if __name__ == "__main__":
