@@ -89,7 +89,7 @@ def aplicar_estilos():
         <style>
         .stApp {{
             background-color: #050505;
-            background-image: linear-gradient(rgba(0,0,0,.40), rgba(0,0,0,.58)),
+            background-image: linear-gradient(rgba(0,0,0,.16), rgba(0,0,0,.28)),
                               url("data:image/png;base64,{logo}");
             background-position: center center;
             background-size: contain;
@@ -98,13 +98,12 @@ def aplicar_estilos():
         }}
         .block-container {{
             max-width: 1180px;
-            background: rgba(5, 5, 5, .82);
+            background: rgba(5, 5, 5, .68);
             border: 1px solid rgba(203, 158, 66, .42);
             border-radius: 20px;
             padding: 2rem 2rem 3rem;
             margin-top: 1rem;
             margin-bottom: 2rem;
-            backdrop-filter: blur(8px);
         }}
         h1, h2, h3 {{ color: #d8ad57 !important; }}
         p, label, .stMarkdown, [data-testid="stWidgetLabel"] {{ color: #f4ead8; }}
